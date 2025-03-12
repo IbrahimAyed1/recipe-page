@@ -67,6 +67,7 @@ body .container {
   padding: 40px;
   border-radius: 24px;
 }
+
 body .container header {
   margin-bottom: 40px;
 }
@@ -141,4 +142,24 @@ table tr td {
 }
 table tr td.nutrition__table__value {
   color: var(--rose-800);
+}
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0px;  /* Reduce body padding on mobile */
+  }
+  
+  body .container {
+    max-width: 100%;  /* Make container full width */
+    padding: 0px;    /* Reduce container padding */
+    border-radius: 0px;  /* Optional: Slightly reduce border radius */
+  }
+  body .container header img {
+    border-radius: 0px;
+  }
+  body .container .container__content{
+    padding: 32px;
+  }
+
 }
